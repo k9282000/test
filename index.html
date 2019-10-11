@@ -1,13 +1,22 @@
-<h1>愛情萬萬歲</h1>
-<ul>
-    <li>
-        <a href="http://dl.allviki.com//mp4/20170628/696/FYNBZKWQFNGLPJLGCALA18040856.mp4?hdnts=exp=1570783130~hmac=dcd7e6f5e510785c201f078a5085677533dc74da341658bdcb3468c8092a6172">
-            <h3>第一集</h3>
+<script>
+var list = [
+    "http://dl.allviki.com//mp4/20170628/696/FYNBZKWQFNGLPJLGCALA18040856.mp4?hdnts=exp=1570783130~hmac=dcd7e6f5e510785c201f078a5085677533dc74da341658bdcb3468c8092a6172",
+    "http://dl.allviki.com//mp4/20170627/168/TDORGFNTUQTKRYAULATV25863509.mp4?hdnts=exp=1570783274~hmac=706b6a3b379f0bde7ffe78ad57ee03393e01d26324e23e861ec85f8d6c13913b",
+    "http://dl.allviki.com//mp4/20170628/419/ODKILDOTWXTGYFGXJDGS83234367.mp4?hdnts=exp=1570785078~hmac=662d3d7876bde3ebaca167059087752674f9480d8477e937058f6b2a6cbe1dba",
+];
+
+
+var contents = "<h1>愛情萬萬歲</h1>";
+contents+=`<ul>`;
+var no = 1;
+list.forEach(uri => {
+    contents+=`<li>
+        <a href="${uri}">
+            <h3>第 ${no++} 集</h3>
         </a>
-    </li>
-    <li>
-        <a href="http://dl.allviki.com//mp4/20170627/168/TDORGFNTUQTKRYAULATV25863509.mp4?hdnts=exp=1570783274~hmac=706b6a3b379f0bde7ffe78ad57ee03393e01d26324e23e861ec85f8d6c13913b">
-            <h3>第二集</h3>
-        </a>
-    </li>
-</ul>
+    </li>`;
+});
+contents+=`</ul>`;
+document.write(contents);
+
+</script>
